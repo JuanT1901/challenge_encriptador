@@ -109,8 +109,7 @@ main {
   border: 1px solid #0A3871;
 }
 
-.decrypt:hover
-.copyButton {
+.decrypt:hover {
   cursor: pointer;
   background-color: #0A3871;
   border: 1px solid #E9ECF8;
@@ -162,4 +161,34 @@ main {
   height: 52px;
   font-size: 16px;
   border-radius: 16px;
+}
+
+.copyButton:hover {
+  cursor: pointer;
+  background-color: #0A3871;
+  border: 1px solid #E9ECF8;
+  color: #E9ECF8;
+}
+
+/* Notification */
+
+#copyNotification {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#copyNotification.show {
+  opacity: 1;
+}
+
+#copyNotification.hidden {
+  display: none;
 }
