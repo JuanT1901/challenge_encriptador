@@ -2,6 +2,7 @@ function encrypt() {
   let text = document.querySelector(".main__input").value.split("");
   let button = document.getElementById("encrypt");
   let copyButton = document.getElementById("copyButton");
+  let imagen = document.querySelector(".withoutText");
 
   let cases = {
     a: "ai",
@@ -22,11 +23,20 @@ function encrypt() {
   let solution = document.getElementById("solution");
   let title = document.querySelector(".solution__title");
 
+  console.log(window.innerHeight)
+
   if (text.length !== 0) {
     title.style.display = "none";
-    solution.innerHTML = encryptedText;
     solution.style.marginBottom = "10px";
     copyButton.style.display = "block";
+    if (innerWidth > 639) {
+      solution.style.fontSize = '250px';
+    }
+    if (innerWidth > 1007) {
+      solution.style.fontSize = '20px';
+    }
+    imagen.style.display = "none";
+    solution.innerHTML = encryptedText;
   } else {
     title.style.display = "block";
     solution.style.marginBottom = "20px";

@@ -16,7 +16,7 @@
     </header>  
 
     <main>
-      <div>
+      <div class="main">
         <textarea class="main__input" rows="1" placeholder="Ingrese el texto aquí"></textarea>
         <div class="main__restrictions"><p><span class="main__restrictions--exclamation">!</span>Solo letras minúsculas y sin acentos</p></div>
       </div>
@@ -27,6 +27,7 @@
       </div>
 
       <div class="solution">
+        <img src="./assets/img/Muñeco.png" alt="texto_no_encontrado" class="withoutText">
         <p class="solution__title">
           Ningún mensaje fue encontrado 
         </p>
@@ -36,7 +37,6 @@
         <button class="copyButton" id="copyButton" style="display:none">Copiar</button>
         <div id="copyNotification" class="hidden">Texto copiado al portapapeles</div>
       </div>
-
     </main>
     <script src="./assets/js/main.js" type="module"></script>
   </body>
