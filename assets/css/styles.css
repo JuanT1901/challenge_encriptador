@@ -1,0 +1,165 @@
+/* Seteo inicial */
+
+html, 
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E9ECF8;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+/* Cabecera */
+
+img {
+  padding: 20px 12px;
+  margin: 24px 0 4px 24px;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Input */
+
+.main__input {
+  box-sizing: border-box;
+  width: calc(100% - 48px);
+  margin: 10px 12px 0 12px;
+  min-height: 300px;
+  max-height: 500px;
+  font-size: 30px;
+  color: #0A3871;
+  font-weight: 500;
+  padding: 8px 8px;
+  background-color: #E9ECF8;
+  border: none;
+  resize: none;
+  overflow: hidden;
+  outline: none;
+}
+
+.main__input::placeholder {
+  font-weight: 600;
+  opacity: 1;
+  color: #0A3871;
+  text-shadow: 1px 1px 2px #424242;
+}
+
+.main__restrictions {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+  opacity: .7;
+  margin: 10px 0;
+}
+
+.main__restrictions--exclamation {
+  background-color: #545454;
+  color: #E9ECF8;
+  margin: 0 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Buttons */
+
+.main__buttons {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 68px);
+  margin-top: 20px;
+  margin-bottom: 36px;
+  gap: 24px;
+}
+
+.btn {
+  height: 60px;
+  font-size: 16px;
+  border-radius: 16px;
+}
+
+.encrypt {
+  background-color: #0A3871;
+  color: #E9ECF8;
+  border: none;
+}
+
+.encrypt:hover {
+  cursor: pointer;
+  background-color: #E9ECF8;
+  border: 1px solid #0A3871;
+  color: #0A3871;
+}
+
+.decrypt,
+.copyButton {
+  background-color: #E9ECF8;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+}
+
+.decrypt:hover
+.copyButton {
+  cursor: pointer;
+  background-color: #0A3871;
+  border: 1px solid #E9ECF8;
+  color: #E9ECF8;
+}
+
+/* Solution */
+
+.solution {
+  width: calc(100% - 48px);
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 10px #a1a1a1;
+  margin-bottom: 20px;
+}
+
+.solution__title {
+  font-size: 20px;
+  max-width: 240px;
+  text-align: center;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.solution__text {
+  text-align: center;
+  max-width: 250px;
+  opacity: .7;
+  margin: 10px 0 10px 0;
+  overflow-wrap: break-word;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+/* Copy button */
+
+.copyButton {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 120px);
+  margin-top: 12px;
+  margin-bottom: 28px;
+  gap: 16px;
+  height: 52px;
+  font-size: 16px;
+  border-radius: 16px;
+}
